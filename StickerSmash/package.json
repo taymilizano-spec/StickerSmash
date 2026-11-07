@@ -1,0 +1,44 @@
+{
+  "name": "stickersmash",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "doctor": "npx expo-doctor",
+    "export:web": "expo export --platform web",
+    "check": "npm run check:static && npm run typecheck && npx expo-doctor && npx expo config --type public && npm run export:web",
+    "check:static": "node scripts/check-project.mjs"
+  },
+  "dependencies": {
+    "expo": "~58.0.0",
+    "expo-constants": "~58.0.15",
+    "expo-image-picker": "~58.0.10",
+    "expo-linking": "~58.0.16",
+    "expo-media-library": "~58.0.13",
+    "expo-router": "~58.0.30",
+    "expo-splash-screen": "~58.0.13",
+    "expo-status-bar": "~58.0.4",
+    "expo-symbols": "~58.0.4",
+    "html2canvas-pro": "^2.6.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-gesture-handler": "~3.3.0",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-view-shot": "~6.1.1",
+    "react-native-web": "0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

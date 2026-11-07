@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "StickerSmash",
+    "slug": "stickersmash",
+    "version": "1.0.0",
+    "scheme": "stickersmash",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "imageWidth": 190,
+      "resizeMode": "contain",
+      "backgroundColor": "#4B1FA8"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.taymilizano.stickersmash",
+      "infoPlist": {
+        "NSPhotoLibraryAddUsageDescription": "StickerSmash necesita permiso para guardar tus creaciones en Fotos."
+      }
+    },
+    "android": {
+      "package": "com.taymilizano.stickersmash",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#4B1FA8"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "StickerSmash necesita acceder a las imágenes que elijas para crear composiciones.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "StickerSmash necesita acceder a tus fotos para administrar las imágenes seleccionadas.",
+          "savePhotosPermission": "StickerSmash necesita permiso para guardar tus creaciones en la galería.",
+          "granularPermissions": []
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 190,
+          "resizeMode": "contain",
+          "backgroundColor": "#4B1FA8"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
